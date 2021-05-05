@@ -29,11 +29,14 @@ table = loadpage.find("table")
 tr = table.find_all("tr", {"style": ""})
 fbd = table.find_all("a", class_="mt_a")
 
+sc = input("Country Name: ")
+
+
 x = 0
 for co in fbd:
     x += 1
-
-    if co.text  == "Bangladesh":
+    ctex = co.text
+    if ctex.upper()  == sc.upper()  :
 
         data = tr[x+1].find_all("td")
         name = data[1].text
