@@ -55,6 +55,7 @@ for co in fbd:
         print(f"\033[0;32;40m Total Recovered : {tre}")
         print(f"\033[1;33;40m Active Case: {ac}")
 
-       
+
 print("\033[1;37;40m Press Any Key To Exit")
 k = readchar.readchar()
+
