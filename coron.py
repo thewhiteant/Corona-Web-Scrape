@@ -1,7 +1,7 @@
 from bs4 import BeautifulSoup as soup
 import requests
 import readchar
-page = requests.get("https://www.worldometers.info/coronavirus").text
+page = requests.get("https://www.worldometers.info/coronavirus", timeout=60).text
 
 loadpage = soup(page,'lxml')
 
